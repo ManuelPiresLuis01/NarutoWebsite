@@ -1,0 +1,152 @@
+::-webkit-scrollbar {
+    width: 0;
+    overflow: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    border: none;
+}
+
+.icon-menu-mobile,
+.mobile {
+    display: none;
+}
+
+.desktop ul {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+
+}
+
+
+.desktop ul li{
+    font-size: 25px;
+
+}
+
+header a {
+    color: #b4b4b4;
+}
+
+
+header a:hover {
+    color: #ebebeb;
+}
+
+section {
+    padding: 15px;
+    background-attachment: fixed;
+}
+
+section h1{
+    font-weight: bold;
+    font-weight:bold;
+}
+
+section.sectionUm {
+    font-size: 20px;
+    color: #e7e7e7;
+    background: url(../img/SectionUm.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+button.btnBecome {
+    padding: 15px;
+    border-radius: 30px;
+  color: #ffffffd0;
+    margin: 10px 0;
+    background-color: #d2691e4b;
+    transition: 1s;
+}
+
+button.btnBecome:hover {
+    cursor: pointer;
+    padding: 15px 40px;
+    background-color: #d2691ed7;
+}
+
+
+@media screen and (max-width:800px) {
+
+    .icon-menu-mobile,
+    .mobile {
+        display: block;
+
+    }
+
+    .desktop {
+        display: none;
+    }
+
+
+    .icon-menu-mobile img {
+        width: 40px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+        cursor: pointer;
+    }
+
+    .mobile {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: 100vh;
+        background-color: black;
+        z-index: 222;
+        width: 0;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    .mobile.abrir {
+        width: 55%;
+    }
+
+    header .mobile a {
+        color: #ebebeb;
+    }
+
+    .mobile ul li {
+        padding: 20px;
+        font-size: 18px;
+        color: #e7e7e7;
+        cursor: pointer;
+    }
+
+    .mobile ul li:hover {
+        background-color: #b4b4b4;
+    }
+
+    .overflow {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #00000070;
+        z-index: 221;
+        display: none;
+    }
+    
+    .overflow.abrir {
+       display: block;
+    }
+}
