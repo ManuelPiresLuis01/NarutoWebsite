@@ -16,3 +16,6 @@ overflow.addEventListener('click',()=>{
     Menu.classList.remove("abrir")
     overflow.classList.remove("abrir")
 })
+
+
+alert("A presente pagina esta em construção, esta pagina de loading é infinita ate o termino da pagina")

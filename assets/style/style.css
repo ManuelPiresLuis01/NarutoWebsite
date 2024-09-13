@@ -17,25 +17,35 @@
     display: none;
 }
 
-.desktop ul {
-    position: fixed;
-    top: 20px;
-    right: 20px;
+header {
+    background-color: black;
     display: flex;
-    gap: 15px;
+    justify-content: center;
 
 }
 
+.desktop ul {
+    display: flex;
+    gap: 30px;
+}
 
-.desktop ul li{
-    font-size: 25px;
+.desktop ul li {
+    padding: 20px 0;
+    font-size: 20px;
+}
 
+.desktop ul li a{
+    padding: 20px 10px;
+}
+
+.desktop ul li a:hover {
+    color: black;
+    background-color: #b4b4b4;
 }
 
 header a {
     color: #b4b4b4;
 }
-
 
 header a:hover {
     color: #ebebeb;
@@ -46,9 +56,9 @@ section {
     background-attachment: fixed;
 }
 
-section h1{
+section h1 {
     font-weight: bold;
-    font-weight:bold;
+    font-weight: bold;
 }
 
 section.sectionUm {
@@ -62,13 +72,13 @@ section.sectionUm {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 }
 
 button.btnBecome {
     padding: 15px;
     border-radius: 30px;
-  color: #ffffffd0;
+    color: #ffffffd0;
     margin: 10px 0;
     background-color: #d2691e4b;
     transition: 1s;
@@ -80,8 +90,7 @@ button.btnBecome:hover {
     background-color: #d2691ed7;
 }
 
-
-@media screen and (max-width:800px) {
+@media screen and (max-width:700px) {
 
     .icon-menu-mobile,
     .mobile {
@@ -92,7 +101,6 @@ button.btnBecome:hover {
     .desktop {
         display: none;
     }
-
 
     .icon-menu-mobile img {
         width: 40px;
@@ -126,7 +134,7 @@ button.btnBecome:hover {
 
     .mobile ul li {
         padding: 20px;
-        font-size: 18px;
+        font-size: 20px;
         color: #e7e7e7;
         cursor: pointer;
     }
@@ -145,8 +153,13 @@ button.btnBecome:hover {
         z-index: 221;
         display: none;
     }
-    
+
     .overflow.abrir {
-       display: block;
+        display: block;
     }
+
+    section.sectionUm {
+        height: 100vh;
+    }
+
 }
